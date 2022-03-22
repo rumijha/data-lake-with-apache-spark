@@ -2,7 +2,7 @@
 
 
 #### Project Description
-A music streaming startup, Sparkify, has grown their user base and song database even more and want to move their data warehouse to a data lake. Their data resides in S3, in a directory of JSON logs on user activity on the app, and JSON metadata on the songs in their app. Here I have built an ETL pipeline that extracts their data from S3, processes them using Spark, and loads the data back into S3 as a set of dimensional tables. The processed data will allow the analytics team to find insights into what songs their users are listening to most frequently
+A music streaming startup, Sparkify, has grown their user base and song database even more and want to move their data warehouse to a data lake. Their data resides in S3, in a directory of JSON logs on user activity on the app, and JSON metadata on the songs in their app. Here I have built an ETL pipeline that extracts their data from S3, processes them using **Apache Spark**, and loads the data back into S3 as a set of dimensional tables. The processed data will allow the analytics team to find insights into what songs their users are listening to most frequently
 
 
 #### Datasets
@@ -55,9 +55,8 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 #### Project Files
 In addition to the data files, the project includes two files:
 * *etl.py* reads data from S3, processes that data using Spark, and writes them back to S3.
-* *dwh.cfg* contains your AWS credentials.
+* *dwh.cfg* contains AWS credentials.
 
 
 #### How To Run the Project
 Run etl.py to extract all the files under given S3 path, transform it and write it back to S3 destination path.
-
